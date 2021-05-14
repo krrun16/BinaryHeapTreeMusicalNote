@@ -11,3 +11,6 @@ pages:
       - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment:
+    name: Binary_Heap_Tree
+    url: https://ljflores.git-pages.research.uiowa.edu/Binary_Heap_Tree
