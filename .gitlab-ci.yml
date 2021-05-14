@@ -12,5 +12,5 @@ pages:
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   environment:
-    name: BHT
+    name: website
     url: https://ljflores.git-pages.research.uiowa.edu/Binary_Heap_Tree
