@@ -1,13 +1,34 @@
-image: registry.gitlab.com/pages/hugo:latest
+# This file is a template, and might need editing before it works on your project.
+# Template project: https://gitlab.com/pages/jekyll
+# Docs: https://docs.gitlab.com/ee/pages/
+image: ruby:2.6
 
 variables:
-  GIT_SUBMODULE_STRATEGY: recursive
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
 
-pages:
+before_script:
+  - gem install bundler
+  - bundle install
+
+test:
+  stage: test
   script:
-  - hugo
+    - bundle exec jekyll build -d test
   artifacts:
     paths:
-    - public
+      - test
+  except:
+    variables:
+      - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+      - public
   only:
-  - master
+    variables:
+      - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
