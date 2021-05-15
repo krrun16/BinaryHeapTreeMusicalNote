@@ -1,6 +1,6 @@
 # Binary_Heap_Tree_Musical_Note
 # Link to project: 
-https://ljflores.git-pages.research.uiowa.edu/Binary_Heap_Tree (currently does not work -- see TODO.txt or the rest of README.md for details.)
+https://ljflores.git-pages.research.uiowa.edu/Binary_Heap_Tree (currently does not work -- see the rest of README.md for details.)
 
 # TODO
 
