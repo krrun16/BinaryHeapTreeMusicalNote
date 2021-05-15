@@ -1,6 +1,9 @@
 # Binary_Heap_Tree_Musical_Note
-# Link to project: 
-https://ljflores.git-pages.research.uiowa.edu/Binary_Heap_Tree (currently does not work -- see the rest of README.md for details.)
+Binary Heap implementation with musical note implementation.
+
+Link to project: https://ljflores.git-pages.research.uiowa.edu/Binary_Heap_Tree (currently does not work -- see the rest of README.md for details.)
+
+The user should hear a musical note when they focus on a changed node.
 
 # TODO
 
